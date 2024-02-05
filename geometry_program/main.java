@@ -20,20 +20,20 @@ class BankAccountTester {
         double height = in.nextDouble();
 
 
-        System.out.printf("Static - Sphere   Volume: %.2f Surface: %.2f\n", Geometry.sphereVolume(radius), Geometry.sphereSurface(radius));
-        System.out.printf("Static - Cylinder Volume: %.2f Surface: %.2f\n", Geometry.cylinderVolume(radius, height), Geometry.cylinderSurface(radius, height));
-        System.out.printf("Static - Cube     Volume: %.2f Surface: %.2f\n", Geometry.cubeVolume(height), Geometry.cubeSurface(height));
-        System.out.printf("Static - Cone     Volume: %.2f Surface: %.2f\n", Geometry.coneVolume(radius, height), Geometry.coneSurfaceArea(radius, height));
+        System.out.printf("Static - Sphere   Vol: %.2f Sfc: %.2f\n", Geometry.sphereVolume(radius), Geometry.sphereSurface(radius));
+        System.out.printf("Static - Cylinder Vol: %.2f Sfc: %.2f\n", Geometry.cylinderVolume(radius, height), Geometry.cylinderSurface(radius, height));
+        System.out.printf("Static - Cube     Vol: %.2f Sfc: %.2f\n", Geometry.cubeVolume(height), Geometry.cubeSurface(height));
+        System.out.printf("Static - Cone     Vol: %.2f Sfc: %.2f\n", Geometry.coneVolume(radius, height), Geometry.coneSurfaceArea(radius, height));
 
 
 
         // Sphere with Sphere class
         Sphere sphere1 = new Sphere(radius);
-        System.out.printf("Class - Sphere Volume: %.2f Surface: %.2f\n", sphere1.get_volume(), sphere1.get_surface_area());
+        System.out.printf("Class - Sphere Vol: %.2f Sfc: %.2f\n", sphere1.get_volume(), sphere1.get_surface_area());
 
         // Cube with Cube class
         Cube cube1 = new Cube(height);
-        System.out.printf("Class - Cube   Volume: %.2f Surface: %.2f\n", cube1.get_volume(), cube1.get_surface_area());
+        System.out.printf("Class - Cube   Vol: %.2f Sfc: %.2f\n", cube1.get_volume(), cube1.get_surface_area());
 
 
         in.close();
