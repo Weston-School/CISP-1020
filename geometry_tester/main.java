@@ -8,7 +8,7 @@ import src.Geometry;
 import src.Sphere;
 import src.Cube;
 
-class BankAccountTester {
+class GeometryTester {
     public static void main(String[] args){
 
         Scanner in = new Scanner(System.in);

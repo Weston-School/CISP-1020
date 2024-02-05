@@ -2,7 +2,7 @@ package src;
 
 public class Geometry {
 
-    
+    // Sphere
     public static double sphereVolume(double r) {
         return (4.0 / 3.0) * Math.PI * Math.pow(r, 3);
     }
@@ -11,6 +11,7 @@ public class Geometry {
         return 4 * Math.PI * Math.pow(r, 2);
     }
 
+    // Cylinder
     public static double cylinderVolume(double r, double h) {
         return Math.PI * Math.pow(r, 2) * h;
     }
@@ -19,6 +20,7 @@ public class Geometry {
         return (2 * Math.PI * r * r) + (2 * Math.PI * r * h);
     }
 
+    // Cube
     public static double cubeVolume(double side) {
         return Math.pow(side, 3);
     }
@@ -27,6 +29,7 @@ public class Geometry {
         return 6 * Math.pow(side, 2);
     }
 
+    // Cone
     public static double coneVolume(double r, double h) {
         return (1.0 / 3.0) * Math.PI * Math.pow(r, 2) * h;
     }
