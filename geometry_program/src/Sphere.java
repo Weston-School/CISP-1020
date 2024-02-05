@@ -2,20 +2,23 @@ package src;
 
 /**
  * @author Weston Hale
- * @apiNote Sphere class that holds diameter and its respective calculations
+ * @apiNote Sphere class that holds radius and its respective calculations
  */
 public class Sphere {
 
-    private double diameter = 0.0;
+    private double radius = 0.0;
     
     public Sphere(){}
 
-    public Sphere(double diamter){
-        this.diameter = diamter;
+    public Sphere(double r){
+        this.radius = r;
     }
 
-    double get_volume(){
-        return (4 * Math.PI * Math.pow(diameter, 3)) / 3;
+    public double get_volume(){
+        return (4 * Math.PI * Math.pow(radius, 3)) / 3;
     }
 
+    public double get_surface_area(){
+        return 4 * Math.PI * Math.pow(radius, 2); 
+    }
 }
