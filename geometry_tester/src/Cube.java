@@ -7,9 +7,10 @@ package src;
 public class Cube {
 
     private double height = 0.0;
-    
-    public Cube(){}
 
+    /**
+     * @param h Height/Side length of the cube
+     */
     public Cube(double h){
         this.height = h;
     }

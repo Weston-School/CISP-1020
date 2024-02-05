@@ -1,5 +1,9 @@
 package src;
 
+/**
+ * @author Weston Hale
+ * @apiNote Geometry class that holds static functions for volume and area of sphere, sylinder, cube, and cone.
+ */
 public class Geometry {
 
     // Sphere

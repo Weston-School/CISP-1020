@@ -7,9 +7,10 @@ package src;
 public class Sphere {
 
     private double radius = 0.0;
-    
-    public Sphere(){}
 
+    /**
+     * @param r Radius of the sphere
+     */
     public Sphere(double r){
         this.radius = r;
     }
