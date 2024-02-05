@@ -15,6 +15,10 @@ public class Cube {
         this.height = h;
     }
 
+    public double get_height(){
+        return height;
+    }
+
     public double get_volume(){
         return Math.pow(height, 3);
     }

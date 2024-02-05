@@ -15,6 +15,10 @@ public class Sphere {
         this.radius = r;
     }
 
+    public double get_radius(){
+        return radius;
+    }
+    
     public double get_volume(){
         return (4 * Math.PI * Math.pow(radius, 3)) / 3;
     }
