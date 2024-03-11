@@ -1,0 +1,11 @@
+public bool equals (Object otherObject){
+
+	if(otherObject instanceof *Type*){
+		*Type* other = (*Type*)otherObject;
+		return this.*var1*.equals(other.*var1*) && this.*var2*.equals(other.*var2*);
+	}
+	return false;
+}
+
+
+
