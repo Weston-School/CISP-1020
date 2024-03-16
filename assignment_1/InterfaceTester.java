@@ -3,6 +3,8 @@
 //  March 15th, 2024
 //  Assigment 1 Program
 
+import java.util.Arrays;
+
 import src.Circle;
 import src.GeometricObject;
 import src.Rectangle;
@@ -34,6 +36,21 @@ class InterfaceTester {
         }
 
 
+
+        Square[] squares = new Square[6];
+
+        squares[0] = new Square(5);
+        squares[1] = new Square(10);
+        squares[2] = new Square(8);
+        squares[3] = new Square(20);
+        squares[4] = new Square(3);
+        squares[5] = new Square(11);
+
+        Arrays.sort(squares);
+
+        for (Square sq : squares) {
+            System.out.println(sq);
+        }
 
     }
 }

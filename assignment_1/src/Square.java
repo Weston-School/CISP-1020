@@ -1,6 +1,6 @@
 package src;
 
-public class Square extends GeometricObject implements Colorable {
+public class Square extends GeometricObject implements Colorable, Comparable<Square> {
 
     double side;
 
@@ -24,6 +24,28 @@ public class Square extends GeometricObject implements Colorable {
 
     public void setSide(double side){
         this.side = side;
+    }
+
+    public double getArea(){
+        return side * side;
+    }
+
+    public String toString(){
+        return Double.toString(getArea());
+    }
+
+    public int compareTo(Square other) {
+
+        // This should match how the normal compareto method works with strings?
+        if(other.getArea() > this.getArea()){
+            return 1;
+        }
+        else if (other.getArea() == this.getArea()){
+            return 0;
+        }
+        else {
+            return -1;
+        }
     }
 
 }
