@@ -6,7 +6,9 @@ public class GeometricObject{
     private boolean filled;
     java.util.Date dateCreated;
 
-    public GeometricObject() {};
+    public GeometricObject() {
+        this.dateCreated = new java.util.Date();
+    };
 
     public GeometricObject(String color, boolean filled){
         this.color = color;
@@ -36,7 +38,7 @@ public class GeometricObject{
     }
 
     public String toString(){
-        return color + ", " + filled  + ", " dateCreated.toString();
+        return color + ", " + filled  + ", " + dateCreated.toString();
     }
 
 }

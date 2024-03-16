@@ -1,7 +1,5 @@
 package src;
 
-import org.w3c.dom.css.Rect;
-
 public class Rectangle extends GeometricObject {
     
     private double width;
@@ -9,13 +7,13 @@ public class Rectangle extends GeometricObject {
 
     Rectangle(){};
 
-    Rectangle(double width, double height){
+    public Rectangle(double width, double height){
         this.width = width;
         this.height = height;
     }
 
-    Rectangle(double width, double height, String color, boolean filled){
-        Super(color, filled);
+    public Rectangle(double width, double height, String color, boolean filled){
+        super(color, filled);
         this.width = width;
         this.height = height;
     }

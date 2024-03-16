@@ -6,11 +6,11 @@ public class Circle extends GeometricObject {
 
     Circle(){};
 
-    Circle(double radius){
+    public Circle(double radius){
         this.radius = radius;
     }
 
-    Circle(double radius, String color, boolean filled){
+    public Circle(double radius, String color, boolean filled){
         super(color, filled);
         this.radius = radius;
     }
@@ -36,6 +36,14 @@ public class Circle extends GeometricObject {
     }
 
     public String toString(){
-        return Super.toString() + radius;
+        return super.toString() + radius;
+    }
+
+    public boolean equals (Object otherObject){
+        if (otherObject instanceof Circle) {
+            Circle other = (Circle)otherObject;
+		    return this.isFilled() == other.isFilled() && this.getRadius() == other.getRadius() && this.getColor().equals(other.getColor());
+        }
+        return false;
     }
 }
