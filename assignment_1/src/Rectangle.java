@@ -41,4 +41,8 @@ public class Rectangle extends GeometricObject {
     public double getPerimiter(){
         return (width * 2) + (height * 2);
     }
+
+    public String toString(){
+        return Double.toString(getArea());
+    }
 }

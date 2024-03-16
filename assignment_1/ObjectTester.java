@@ -3,8 +3,6 @@
 //  March 15th, 2024
 //  Assigment 1 Program
 
-import org.w3c.dom.css.Rect;
-
 import src.Circle;
 import src.GeometricObject;
 import src.Rectangle;
@@ -33,6 +31,5 @@ class ObjectTester {
 
         boolean eq = circ1.equals(circ2);
         System.out.println("Equals: " + eq);
-
     }
 }
