@@ -11,8 +11,7 @@ public class Circle extends GeometricObject {
     }
 
     Circle(double radius, String color, boolean filled){
-        java.util.Date date_now = new java.util.Date();  
-        Super(color, filled, date_now);
+        super(color, filled);
         this.radius = radius;
     }
 
@@ -34,5 +33,9 @@ public class Circle extends GeometricObject {
 
     public double getDiamter(){
         return (radius * 2);
+    }
+
+    public String toString(){
+        return Super.toString() + radius;
     }
 }

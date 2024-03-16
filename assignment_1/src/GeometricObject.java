@@ -8,10 +8,10 @@ public class GeometricObject{
 
     public GeometricObject() {};
 
-    public GeometricObject(String color, boolean filled, java.util.Date dateCreated){
+    public GeometricObject(String color, boolean filled){
         this.color = color;
         this.filled = filled;
-        this.dateCreated = dateCreated;
+        this.dateCreated = new java.util.Date();
     }
 
 

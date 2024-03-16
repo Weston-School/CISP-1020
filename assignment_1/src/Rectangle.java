@@ -15,8 +15,7 @@ public class Rectangle extends GeometricObject {
     }
 
     Rectangle(double width, double height, String color, boolean filled){
-        java.util.Date date_now = new java.util.Date();  
-        Super(color, filled, date_now);
+        Super(color, filled);
         this.width = width;
         this.height = height;
     }

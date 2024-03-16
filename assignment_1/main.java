@@ -10,10 +10,7 @@ class ObjectTester {
 
     public static void main(String[] args){
 
-
-        java.util.Date date_now =new java.util.Date();  
-
-        GeometricObject geoObj = new GeometricObject("Blue", true, date_now);
+        GeometricObject geoObj = new GeometricObject("Blue", true);
         System.out.println(geoObj.toString());
 
         
