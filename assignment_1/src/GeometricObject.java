@@ -46,7 +46,8 @@ public class GeometricObject{
     }
 
     public String toString(){
-        return color + ", " + filled  + ", " + dateCreated.toString();
+        String ret_string = String.format("%s, %b, %s", color, filled, dateCreated);
+        return ret_string;
     }
 
 }

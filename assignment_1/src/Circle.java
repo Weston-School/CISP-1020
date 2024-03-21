@@ -41,7 +41,7 @@ public class Circle extends GeometricObject {
     }
 
     public String toString(){
-        return super.toString() + radius;
+        return radius + ", " + super.toString();
     }
 
     /**

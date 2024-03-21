@@ -12,31 +12,31 @@ class ObjectTester {
 
     public static void main(String[] args){
 
-        // ⦁	Create a GeometricObject object and call the toString method
-        GeometricObject geoObj1 = new GeometricObject("Blue", true);
-        System.out.println("geoObj1 toString: " + geoObj1.toString());
+        // ⦁	Create a GeometricObject object
+        GeometricObject go1 = new GeometricObject("Blue", true);
+        System.out.println(go1.toString());
 
-        // ⦁	Create a Rectangle using the two parameters constructor object and call the toString method
+        // ⦁	Create a Rectangle using the two parameters constructor
         Rectangle r1 = new Rectangle(5, 10);
-        System.out.println("rect1 toString: " + r1.toString());
+        System.out.println(r1.toString());
 
-        // ⦁	Create a Rectangle using the four parameters constructor object and call the toString method
+        // ⦁	Rectangle using the four parameters constructor
         Rectangle r2 = new Rectangle(5, 10, "Red", false);
-        System.out.println("rect2 toString: " + r2.toString());
+        System.out.println(r2.toString());
 
-        // ⦁	Create a Circle using the one parameters constructor object and call the toString method
+        // ⦁	Circle using the one parameters constructor
         Circle c1 = new Circle(5);
-        System.out.println("circ1 toString: " + c1.toString());
+        System.out.println(c1.toString());
 
-        // ⦁	Create a Circle using the three parameters constructor object and call the toString method
+        // ⦁	Circle using the three parameters constructor
         Circle c2 = new Circle(5, "Green", true);
-        System.out.println("circ2 toString: " + c2.toString());
+        System.out.println(c2.toString());
 
 
         // ⦁	Compare two circle object created using the three parameters constructor by calling the equals method
         Circle c3 = new Circle(5, "Yellow", true);
         Circle c4 = new Circle(5, "Orange", true);
         boolean equality = c3.equals(c4);
-        System.out.println("Equals: " + equality);
+        System.out.println("C3 equals C4: " + equality);
     }
 }
