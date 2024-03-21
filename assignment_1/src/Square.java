@@ -1,5 +1,13 @@
+//  Weston Hale
+//  A00267225
+//  March 15th, 2024
+//  Assigment 1 Program
+
 package src;
 
+/**
+ * Implements colorable and overloads the compareTo method to check Area
+ */
 public class Square extends GeometricObject implements Colorable, Comparable<Square> {
 
     double side;
@@ -10,10 +18,6 @@ public class Square extends GeometricObject implements Colorable, Comparable<Squ
         this.side = side;
     }
 
-    public Square(double side, String color, boolean filled){
-        super(color, filled);
-        this.side = side;
-    }
     public String howToColor() {
         return "Color all four sides";
     }
@@ -30,13 +34,14 @@ public class Square extends GeometricObject implements Colorable, Comparable<Squ
         return side * side;
     }
 
-    public String toString(){
-        return Double.toString(getArea());
-    }
-
+    //⦁	Implement the following comparable interface in the Square class:
+    /**
+     * Tells the user how to color the object.
+     * @param other Object of type Square to compare against
+     * @return Integer: 1 if the other Sqaure is larger, 0 if equals, and -1 if this Square is larger
+     */
     public int compareTo(Square other) {
 
-        // This should match how the normal compareto method works with strings?
         if(other.getArea() > this.getArea()){
             return 1;
         }

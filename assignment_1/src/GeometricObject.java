@@ -1,10 +1,18 @@
+//  Weston Hale
+//  A00267225
+//  March 15th, 2024
+//  Assigment 1 Program
+
 package src;
 
+/**
+ * dateCreated is set upon object construction
+ */
 public class GeometricObject{
     
     private String color;
     private boolean filled;
-    java.util.Date dateCreated;
+    private java.util.Date dateCreated;
 
     public GeometricObject() {
         this.dateCreated = new java.util.Date();
@@ -33,7 +41,7 @@ public class GeometricObject{
         return this.filled;
     }
 
-    public java.util.Date getDate(){
+    public java.util.Date getDateCreated(){
         return this.dateCreated;
     }
 

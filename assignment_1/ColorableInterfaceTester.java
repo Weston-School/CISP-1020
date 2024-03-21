@@ -11,11 +11,12 @@ import src.Rectangle;
 import src.Square;
 
 
-class InterfaceTester {
+class ColorableInterfaceTester {
 
     public static void main(String[] args){
 
 
+        // ⦁	Write a test program that creates an array of six GeometricObject (two circles, two rectangles, and two squares). 
         GeometricObject[] geoObjects = new GeometricObject[6];
 
         geoObjects[0] = new Circle(5);
@@ -25,9 +26,10 @@ class InterfaceTester {
         geoObjects[3] = new Rectangle(5, 10, "Red", false);
 
         geoObjects[4] = new Square(5);
-        geoObjects[5] = new Square(10, "Red", false);
+        geoObjects[5] = new Square(10);
 
 
+        System.out.println("Call howToColor() on the array of GeoMetricObjects");
         for (GeometricObject obj : geoObjects) {
             if(obj instanceof Square){
                 Square newObject = (Square)obj;
@@ -36,7 +38,8 @@ class InterfaceTester {
         }
 
 
-
+        
+        // ⦁	Create an array of squares and sort it.
         Square[] squares = new Square[6];
 
         squares[0] = new Square(5);
@@ -48,8 +51,9 @@ class InterfaceTester {
 
         Arrays.sort(squares);
 
+        System.out.println("\nSorted Squares");
         for (Square sq : squares) {
-            System.out.println(sq);
+            System.out.printf("Square: Side: %.1f Area: %.1f\n", sq.getSide(), sq.getArea());
         }
 
     }

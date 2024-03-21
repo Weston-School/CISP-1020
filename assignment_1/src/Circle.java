@@ -1,10 +1,15 @@
+//  Weston Hale
+//  A00267225
+//  March 15th, 2024
+//  Assigment 1 Program
+
 package src;
 
 public class Circle extends GeometricObject {
     
     double radius;
 
-    Circle(){};
+    Circle(){}; // The UML diagram asks for a default constructor with no params?
 
     public Circle(double radius){
         this.radius = radius;
@@ -39,6 +44,10 @@ public class Circle extends GeometricObject {
         return super.toString() + radius;
     }
 
+    /**
+     * @param otherObject an object of type Circle
+     * @return True if filled, radius and color are equal
+     */
     public boolean equals (Object otherObject){
         if (otherObject instanceof Circle) {
             Circle other = (Circle)otherObject;
