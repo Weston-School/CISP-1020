@@ -27,7 +27,7 @@ class QuadraticTester {
             double x1 = ((0-b) + square_val) / (2 * a);
             double x2 = ((0-b) - square_val) / (2 * a);
 
-            System.out.printf("X1: %.3f  X2: %.3f\n", x1, x2);
+            System.out.printf("X1: %.5f  X2: %.5f\n", x1, x2);
         }
         // Catch custom exception
         catch (NanException nan_e){
